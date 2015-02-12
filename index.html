@@ -1,0 +1,110 @@
+<html>
+<head>
+<script type="text/javascript" src="jscolor/jscolor.js"></script>
+<title>Material Design: Palette Maker</title>
+<style type="text/css">
+.palette {
+	width: 300px;
+}
+
+.swatch {
+	min-height: 50px;
+	width: 100%;
+	display: block;
+}
+
+.swatch.main {
+	height: 100px;
+}
+
+.hue-label {
+	float:left;
+}
+
+.hue-picker {
+	float: right;
+}
+
+input{
+	border:none;
+	background: transparent;
+}
+</style>
+</head>
+<body>
+
+<div class="palette">
+	<div class="swatch main">
+		<p style="text-align:center;"><input type="text" name="palettte_name" placeholder="cool palette name"></p> <p>&nbsp;</p>
+		<span class="hue-label">500</span>
+		<input class="hue-picker color" name="hue500" />
+	</div>
+	<div class="swatch" data-hue="50">
+		<span class="hue-label">50</span>
+		<input class="hue-picker color" name="hue50" />
+	</div>
+	<div class="swatch" data-hue="100">
+		<span class="hue-label">100</span>
+		<input class="hue-picker color" name="hue100" />
+	</div>
+	<div class="swatch" data-hue="200">
+		<span class="hue-label">200</span>
+		<input class="hue-picker color" name="hue200" />
+	</div>
+	<div class="swatch" data-hue="300">
+		<span class="hue-label">300</span>
+		<input class="hue-picker color" name="hue300" />
+	</div>
+	<div class="swatch" data-hue="400">
+		<span class="hue-label">400</span>
+		<input class="hue-picker color" name="hue400" />
+	</div>
+	<div class="swatch" data-hue="500">
+		<span class="hue-label">500</span>
+		<input class="hue-picker color" name="hue500" />
+	</div>
+	<div class="swatch" data-hue="600">
+		<span class="hue-label">600</span>
+		<input class="hue-picker color" name="hue600" />
+	</div>
+	<div class="swatch" data-hue="700">
+		<span class="hue-label">700</span>
+		<input class="hue-picker color" name="hue700" />
+	</div>
+	<div class="swatch" data-hue="800">
+		<span class="hue-label">800</span>
+		<input class="hue-picker color" name="hue800" />
+	</div>
+	<div class="swatch" data-hue="900">
+		<span class="hue-label">900</span>
+		<input class="hue-picker color" name="hue900" />
+	</div>
+	<div class="swatch" data-hue="A100">
+		<span class="hue-label">A100</span>
+		<input class="hue-picker color" name="hueA100" />
+	</div>
+	<div class="swatch" data-hue="A200">
+		<span class="hue-label">A200</span>
+		<input class="hue-picker color" name="hueA200" />
+	</div>
+	<div class="swatch" data-hue="A400">
+		<span class="hue-label">A400</span>
+		<input class="hue-picker color" name="hueA400" />
+	</div>
+	<div class="swatch" data-hue="A700">
+		<span class="hue-label">A700</span>
+		<input class="hue-picker color" name="hueA700" />
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function onColorChanged(event){
+	console.log(event);
+}
+
+document.getElementsByClassName('color').addEventListener('change', onColorChanged);
+
+</script>
+</body>
+</html>
